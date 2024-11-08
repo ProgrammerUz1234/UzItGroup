@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: #222;
+  color: #fff;
+}
+
+.Navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+  width: 90%;
+}
+
+.Navbar ul{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+li a{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+li a:hover{
+  color: #08CE3B;
+  transition: .2s ease-in-out;
+}
+
+.dropdown:hover{
+  cursor: pointer;
+}
+
+.dropdown-menu:hover{
+  cursor: pointer;
+}
+
+.logo{
+  margin-top: 10px;
+}
+
+.Navbar ul{
+  gap: 35px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu div{
+  width: 30px;
+  background: #fff;
+  height: 5px;
+}
+
+@media screen and (max-width: 1340px) {
+  .Navbar{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+button{
+  border: none;
+}
+
+.hidden{
+  display: hidden;
+}
