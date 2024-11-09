@@ -18,7 +18,7 @@
 }
 
 nav{
-  width: 98%;
+  width: 95%;
 }
 
 .logo{
@@ -29,6 +29,10 @@ nav{
 .link{
   color: #fff;
   text-decoration: none;
+}
+
+.link:hover{
+  color: #27E04C;
 }
 
 .list{

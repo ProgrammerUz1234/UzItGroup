@@ -99,25 +99,17 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Share
                 </a>
                 <ul className="dropdown-menu d">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Telegram
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
+                      Instagram
                     </a>
                   </li>
                 </ul>
