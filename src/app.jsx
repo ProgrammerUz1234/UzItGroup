@@ -1,12 +1,12 @@
-import React, { Suspense } from "react";
-import "./app.scss";
-import Preloader from "./components/Preloader/Preloader";
-import { Route, Routes } from "react-router";
-import Layout from "./components/Layout/Layout";
-import Home from "./pages/Home/Home";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import ThemeCTX from "./context/ThemeCTX";
+import React, { Suspense } from 'react';
+import './app.scss';
+import Preloader from './components/Preloader/Preloader';
+import { Route, Routes } from 'react-router';
+import Layout from './components/Layout/Layout';
+import Home from './pages/Home/Home';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import ThemeCTX from './context/ThemeCTX';
 
 export function App() {
   const [openBurger, setOpenBurger] = React.useState(false);
@@ -29,15 +29,12 @@ export function App() {
 
   return (
     <ThemeCTX>
-      {" "}
+      {' '}
       <Suspense fallback="loading">
         <Routes>
           <Route
             path="/"
-            element={
-              <Layout openBurger={openBurger} setOpenBurger={setOpenBurger} />
-            }
-          >
+            element={<Layout openBurger={openBurger} setOpenBurger={setOpenBurger} />}>
             <Route index element={<Home />} />
           </Route>
         </Routes>
