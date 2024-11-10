@@ -1,7 +1,6 @@
 .faq {
   min-height: 768px;
-  background: linear-gradient(360deg, #05fd42 5%, #262626 100%),
-    url("./question-man.png");
+  background: linear-gradient(360deg, #6b8c49 5%, #262626 100%), url("./question-man.png");
   padding-bottom: 25px;
 
   .faqWrapper {
@@ -26,8 +25,7 @@
 
 @media screen and (max-width: 1520px) {
   .faqWrapper {
-    transition: background-size 3s ease-in-out background-position 3s
-      ease-in-out;
+    transition: background-size 3s ease-in-out background-position 3s ease-in-out;
   }
   .faq {
     button {
@@ -55,7 +53,7 @@
 
 @media screen and (max-width: 1024px) {
   .faq {
-    h2 {
+    h2{
       font-size: 72px !important;
     }
     .faqWrapper {
@@ -67,7 +65,7 @@
 @media screen and (max-width: 960px) {
   .faq {
     padding-bottom: 0;
-    h2 {
+    h2{
       text-align: center;
       font-size: 64px !important;
     }
@@ -83,7 +81,7 @@
 @media screen and (max-width: 768px) {
   .faq {
     min-height: fit-content;
-    h2 {
+    h2{
       font-size: 54px !important;
     }
     .faqWrapper {
@@ -103,7 +101,7 @@
   .faq {
     .faqWrapper {
       button {
-        svg {
+        svg    {
           margin-top: 10px !important;
         }
         div {

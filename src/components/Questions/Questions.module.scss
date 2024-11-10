@@ -1,7 +1,7 @@
 .questions {
   padding-top: 25px;
   height: 783px;
-  background: linear-gradient(180deg, #05fd42 5%, #262626 55%);
+  background: linear-gradient(180deg, #6b8c49 5%, #262626 55%);
   .form {
     width: 461px;
     display: flex;
@@ -13,21 +13,15 @@
       font-size: 29px;
       font-weight: 500;
       height: 70px;
-      border: 1px solid #05fd42;
+      border: 1px solid #6b8c49;
       outline: none;
       background: #262626;
       box-shadow: -10px 10px 10px black;
     }
-    button {
-      border: 1px solid #05fd42 !important;
-      &:hover {
-        border: none !important;
-      }
-    }
     textarea {
       resize: none;
       height: 150px;
-      border: 1px solid #05fd42;
+      border: 1px solid #6b8c49;
       outline: none;
       background: #262626;
       font-size: 29px;
@@ -49,12 +43,12 @@
     }
   }
 }
-@media screen and (min-width: 2250px) {
+@media screen and (min-width: 2250px){
   .questions {
     max-width: 2250px;
     margin: auto;
   }
-}
+} 
 @media screen and (max-width: 960px) {
   .questions {
     padding-top: 0;
@@ -68,10 +62,10 @@
 @media screen and (max-width: 863px) {
   .questions {
     height: fit-content;
-    div {
+    div{
       padding-right: 0;
     }
-    h2 {
+    h2{
       font-size: 54px;
       text-align: center;
     }
@@ -97,5 +91,6 @@
 // width: 338px;
 @media screen and (max-width: 720px) {
   .questions {
+   
   }
 }

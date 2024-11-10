@@ -11,9 +11,6 @@
   width: 70%;
   margin: auto;
   margin-top: 25px;
-  button {
-    border: 1px solid #05fd42 !important;
-  }
 }
 @media screen and (min-width: 2250px) {
   .development {
@@ -43,7 +40,7 @@
       font-size: 64px !important;
     }
   }
-
+  
   .developmentWrapper {
     flex-direction: column;
     div {

@@ -1,15 +1,13 @@
 .services {
-  background: linear-gradient(360deg, #262626 5%, #05fd42 100%);
+  background: linear-gradient(360deg, #262626 5%, #6b8c49 100%);
   height: fit-content;
 
   padding-bottom: 120px;
   .servicesWrapper {
-    margin-top: 40px;
     width: 80%;
 
     margin: 0 auto;
     .servicesTitle {
-      padding-top: 80px;
       font-size: 62px;
       font-weight: 700;
       text-align: center;
@@ -43,11 +41,11 @@
         position: absolute;
         left: -25px;
         top: 15px;
-        box-shadow: -10px 5px 5px #262626;
+        box-shadow: -10px 5px 5px rgb(26, 25, 25);
         display: flex;
         align-items: center;
         padding-left: 10px;
-        background: #01a92b;
+        background: #6b8c49;
         h2 {
           text-align: start;
           font-size: 29px;
@@ -70,7 +68,7 @@
 
           width: 219px;
           height: 52px;
-          border: 1px solid #05fd42;
+          border: 1px solid #6b8c49;
           font-size: 25px;
           color: #fff;
           // margin-top: 37px;
@@ -83,12 +81,12 @@
     }
   }
 }
-@media screen and (min-width: 2250px) {
+@media screen and (min-width: 2250px){
   .services {
     max-width: 2250px;
     margin: auto;
   }
-}
+} 
 @media screen and (max-width: 1600px) {
   .services {
     .servicesWrapper {

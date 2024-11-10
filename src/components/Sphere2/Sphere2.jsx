@@ -1,9 +1,9 @@
-import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 // Set up the scene, camera, and renderer
 
-import React from "react";
+import React from 'react';
 
 export default function Sphere2() {
   const sphere2 = React.useRef(null);
@@ -11,9 +11,9 @@ export default function Sphere2() {
   React.useEffect(() => {
     const textureLoader = new THREE.TextureLoader();
 
-    const normalTexture = textureLoader.load("./normalMap.jpg");
+    const normalTexture = textureLoader.load('./normalMap.jpg');
 
-    const canvas = document.querySelector("canvas.webgl");
+    const canvas = document.querySelector('canvas.webgl');
 
     // Scene
     const scene = new THREE.Scene();
@@ -48,7 +48,7 @@ export default function Sphere2() {
       height: window.innerHeight,
     };
 
-    window.addEventListener("resize", () => {
+    window.addEventListener('resize', () => {
       // Update sizes
       sizes.width = window.innerWidth;
       sizes.height = window.innerHeight;
@@ -66,12 +66,7 @@ export default function Sphere2() {
      * Camera
      */
     // Base camera
-    const camera = new THREE.PerspectiveCamera(
-      75,
-      sizes.width / sizes.height,
-      0.1,
-      100
-    );
+    const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
     camera.position.x = 0;
     camera.position.y = 0;
     camera.position.z = 2;

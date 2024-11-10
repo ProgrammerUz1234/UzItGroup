@@ -1,8 +1,8 @@
-import React from "react";
-import "./Sphere.scss";
+import React from 'react';
+import './Sphere.scss';
 
-import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 export default function Sphere() {
   const sphereRef = React.useRef();
@@ -10,10 +10,10 @@ export default function Sphere() {
   React.useEffect(() => {
     // Texture loader
     const loader = new THREE.TextureLoader();
-    const cross = loader.load("./cross.png");
+    const cross = loader.load('./cross.png');
 
     // Canvas
-    const canvas = document.querySelector("canvas.webgl");
+    const canvas = document.querySelector('canvas.webgl');
 
     // Scene
     const scene = new THREE.Scene();
@@ -30,10 +30,7 @@ export default function Sphere() {
       posArray[i] = (Math.random() - 0.5) * 5;
     }
 
-    particleGeometry.setAttribute(
-      "position",
-      new THREE.BufferAttribute(posArray, 3)
-    );
+    particleGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
 
     // Materials
 
@@ -68,7 +65,7 @@ export default function Sphere() {
       height: window.innerHeight,
     };
 
-    window.addEventListener("resize", () => {
+    window.addEventListener('resize', () => {
       // Update sizes
       sizes.width = window.innerWidth;
       sizes.height = window.innerHeight;
@@ -86,12 +83,7 @@ export default function Sphere() {
      * Camera
      */
     // Base camera
-    const camera = new THREE.PerspectiveCamera(
-      75,
-      sizes.width / sizes.height,
-      0.1,
-      100
-    );
+    const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
     camera.position.x = -1;
     camera.position.y = -0.1;
     camera.position.z = 2;
@@ -109,10 +101,10 @@ export default function Sphere() {
     });
     renderer.setSize(sizes.width, sizes.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.setClearColor(new THREE.Color("#262626"), 1);
+    renderer.setClearColor(new THREE.Color('#262626'), 1);
 
     // mouse
-    document.addEventListener("mousemove", animetaParticles);
+    document.addEventListener('mousemove', animetaParticles);
 
     let mouseX = 0;
     let mouseY = 0;

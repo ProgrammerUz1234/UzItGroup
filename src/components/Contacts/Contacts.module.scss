@@ -19,27 +19,21 @@
         left: 5px;
         width: 700px;
         height: 475px;
-        background: #05fd42;
+        background: #6b8c49;
         z-index: -1;
       }
     }
     .contactsRight {
       padding-top: 70px;
-      button {
-        border: 1px solid #05fd42 !important;
-        &:hover {
-          border: none !important;
-        }
-      }
     }
   }
 }
-@media screen and (min-width: 2250px) {
+@media screen and (min-width: 2250px){
   .contacts {
     max-width: 2250px;
     margin: auto;
   }
-}
+} 
 @media screen and (max-width: 1540px) {
   .contacts {
     .contactsWrapper {

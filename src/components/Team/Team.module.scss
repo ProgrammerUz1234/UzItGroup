@@ -13,12 +13,6 @@
     padding-left: 135px;
     padding-right: 30px;
     .teamWrapperLeft {
-      button {
-        border: 1px solid #05fd42 !important;
-        &:hover {
-          border: none !important;
-        }
-      }
       p {
         font-size: 30px;
         font-weight: 700;
@@ -61,7 +55,7 @@
     content: "";
     width: 520px;
     height: 680px;
-    background: #05fd42;
+    background: #6b8c49;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,12 +77,12 @@
     transform: translate(-50%, -50%);
   }
 }
-@media screen and (min-width: 2250px) {
-  .team {
+@media screen and (min-width: 2250px){
+  .team{
     max-width: 2250px;
     margin: auto;
   }
-}
+} 
 @media screen and (max-width: 1540px) {
   .team {
     .teamWrapper {
@@ -166,9 +160,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
   .team {
-    h2 {
+    h2{
       font-size: 52px;
     }
     .teamWrapper {
@@ -178,11 +172,11 @@
           white-space: normal !important;
           padding-top: 0;
         }
-        button {
+        button{
           width: 100% !important;
         }
       }
-      .teamWrapperRight {
+      .teamWrapperRight{
         width: 100%;
         &::after {
           width: 80%;

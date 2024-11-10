@@ -1,3 +1,3 @@
 export const en = {
-  key: "something",
-};
+  key : 'something'
+}

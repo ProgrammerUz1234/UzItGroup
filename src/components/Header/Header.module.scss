@@ -25,14 +25,15 @@
         transition: 0.3s;
 
         &:hover {
-          color: #01f841;
+          color: #96d966;
         }
       }
     }
   }
-  .headerRight {
-    display: flex;
-    align-items: center;
+  .headerRight{
+    display: flex; 
+    align-items: center; 
+
   }
 
   .popup {
@@ -43,7 +44,7 @@
     left: -20px;
     top: 40px;
     padding: 15px;
-    border: none;
+    border: 1px solid #00ff42;
     z-index: 10;
   }
   .theme {
@@ -87,8 +88,8 @@
     left: calc(50% - 0.5em);
     width: 1em;
     height: 1em;
-    transition: box-shadow var(--transDur) ease-in-out,
-      opacity var(--transDur) ease-in-out, transform var(--transDur) ease-in-out;
+    transition: box-shadow var(--transDur) ease-in-out, opacity var(--transDur) ease-in-out,
+      transform var(--transDur) ease-in-out;
     transform: scale(0.5);
   }
   .theme__icon-part ~ .theme__icon-part {
@@ -144,8 +145,8 @@
     height: 34px;
     -webkit-appearance: none;
     appearance: none;
-    transition: background-color var(--transDur) ease-in-out,
-      box-shadow 0.15s ease-in-out, transform var(--transDur) ease-in-out;
+    transition: background-color var(--transDur) ease-in-out, box-shadow 0.15s ease-in-out,
+      transform var(--transDur) ease-in-out;
   }
   .theme__toggle:before {
     background-color: hsl(48, 90%, 55%);
@@ -153,8 +154,7 @@
     content: "";
     width: 25px;
     height: 25px;
-    transition: background-color var(--transDur) ease-in-out,
-      transform var(--transDur) ease-in-out;
+    transition: background-color var(--transDur) ease-in-out, transform var(--transDur) ease-in-out;
   }
   .theme__toggle:focus {
     box-shadow: 0 0 0 0.125em var(--primary);
@@ -220,6 +220,7 @@
   }
 }
 
+
 .share {
   position: relative;
   display: flex;
@@ -276,9 +277,9 @@
 }
 @media screen and (max-width: 1280px) {
   .header {
-    ul {
+    ul {  
       a {
-        li {
+        li{
           margin-left: 20px;
         }
       }
@@ -286,14 +287,14 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .header {
-    .headerRight {
+  .header{
+    .headerRight{
       display: none;
     }
-    .theme {
+    .theme{
       display: none;
     }
-    .share {
+    .share{
       display: none;
     }
     ul {
@@ -303,12 +304,16 @@
         }
       }
     }
+
   }
+
+
+  
 }
 
-@media screen and (min-width: 2250px) {
+@media screen and (min-width: 2250px){
   .header {
     max-width: 2250px;
     margin: auto;
   }
-}
+} 

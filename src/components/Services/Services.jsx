@@ -1,15 +1,15 @@
-import React from "react";
-import styles from "./Services.module.scss";
-import Tarrifs from "./Tarrifs";
-import { useTranslation } from "react-i18next";
-import { tariffsItem } from "./data.js";
+import React from 'react';
+import styles from './Services.module.scss';
+import Tarrifs from './Tarrifs';
+import { useTranslation } from 'react-i18next';
+import { tariffsItem } from './data.js';
 
 export default function Services() {
   const { t } = useTranslation();
 
-  const tarriffArray1 = t("services.tarrifs1", { returnObjects: true });
-  const tarriffArray2 = t("services.tarrifs2", { returnObjects: true });
-  const tarriffArray3 = t("services.tarrifs3", { returnObjects: true });
+  const tarriffArray1 = t('services.tarrifs1', { returnObjects: true });
+  const tarriffArray2 = t('services.tarrifs2', { returnObjects: true });
+  const tarriffArray3 = t('services.tarrifs3', { returnObjects: true });
 
   const tarriffImg1 = tariffsItem[0].services.map((img) => img);
   const tarriffImg2 = tariffsItem[1].services.map((img) => img);
@@ -20,12 +20,12 @@ export default function Services() {
   return (
     <section className={styles.services}>
       <div className={styles.servicesWrapper}>
-        {" "}
-        <h2 className={styles.servicesTitle}>{t("services.title")}</h2>{" "}
-        <p className={styles.servicesSubtitle}>{t("services.subtitle")}</p>
+        {' '}
+        <h2 className={styles.servicesTitle}>{t('services.title')}</h2>{' '}
+        <p className={styles.servicesSubtitle}>{t('services.subtitle')}</p>
       </div>
       <div className={styles.tarrifsWrapper}>
-        {" "}
+        {' '}
         <Tarrifs
           delay="100"
           aos="fade-up"

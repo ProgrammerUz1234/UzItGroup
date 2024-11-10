@@ -1,10 +1,13 @@
-.webgl {
-  position: absolute;
+.webgl
+{
+    position: absolute;
+ 
+    height: fit-content;
+  
 
-  height: fit-content;
-
-  top: 0;
-  left: 0;
-  outline: none;
+    top: 0;
+    left: 0;
+    outline: none;
   z-index: 0;
+  
 }
