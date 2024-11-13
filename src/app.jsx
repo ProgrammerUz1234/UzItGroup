@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import './app.scss';
 import Preloader from './components/Preloader/Preloader';
-import { Route, Routes } from 'react-router';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import AOS from 'aos';
@@ -19,13 +19,6 @@ export function App() {
     AOS.refresh();
   }, []);
 
-  // React.useEffect(()=>{
-
-  //   window.addEventListener('load', ()=>{
-  //     let body = document.querySelector('body')
-  //     body.style.overflow = 'hidden'
-  //   })
-  // },[])
 
   return (
     <ThemeCTX>
