@@ -17,12 +17,12 @@ import dj from "./assets/django.png";
 const Team = () => {
   return (
     <div className="Team">
-      <h1 className="title">Our Team</h1>
+      <h1 className="title">Наша команда</h1>
       <div className="container">
         <div className="teacher">
           <img src="" alt="" />
-          <h2 className="name">Diyor Xasanov</h2>
-          <p className="courses">Front-End, kompyuter savodxonligi</p>
+          <h2 className="name">Диёр Хасанов</h2>
+          <p className="courses">Фронт-Энд, Компьютерная грамотность</p>
           <div className="skills">
             <img src={html} alt="html" /> <img src={css} alt="css" />
             <img src={scss} alt="scss" /> <img src={js} alt="js" />{" "}
@@ -33,12 +33,11 @@ const Team = () => {
             <img src={git} alt="git" />
           </div>
           <p className="experience">Middle Developer</p>
-          <button>More</button>
         </div>
         <div className="teacher">
           <img src="" alt="" />
           <h2 className="name">Roma</h2>
-          <p className="courses">Front-End, kompyuter savodxonligi</p>
+          <p className="courses">Фронт-Энд, Компьютерная грамотность</p>
           <div className="skills">
             <img src={html} alt="html" /> <img src={css} alt="css" />
             <img src={scss} alt="scss" /> <img src={js} alt="js" />{" "}
@@ -48,7 +47,6 @@ const Team = () => {
             <img src={git} alt="git" />
           </div>
           <p className="experience">Middle Developer</p>
-          <button>More</button>
         </div>
         <div className="teacher">
           <img src="" alt="" />

@@ -1,51 +1,8 @@
 import React from 'react';
 import style from './Header.module.scss';
-import { useTranslation } from 'react-i18next';
 import BurgerIcon from '../Burger/BurgerIcon';
 
 export default function HeaderRightSide() {
-  const { t, i18n } = useTranslation();
-  const [isPopup, setIsPopup] = React.useState(false);
-
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
-  const languageSelect = [
-    {
-      id: 1,
-      language: 'RU',
-      img: './russian.png',
-      switch: 'ru',
-    },
-    {
-      id: 2,
-      language: 'UZ',
-      img: './uzbekistan.png',
-      switch: 'uz',
-    },
-    {
-      id: 3,
-      language: 'EN',
-      img: './usa.png',
-      switch: 'en',
-    },
-  ];
-  const [selectLanguage, setSelectLanguage] = React.useState('RU');
-  console.log(selectLanguage);
-  // React.useState(() => {
-
-  //     const data = JSON.parse(localStorage.getItem('language'));
-  //     setSelectLanguage(data);
-
-  // }, []);
-
-  // React.useEffect(() => {
-  //   localStorage.setItem('language', JSON.stringify(selectLanguage));
-  // }, [selectLanguage]);
-
-  function handlePopup() {
-    setIsPopup(!isPopup);
-  }
   return (
     <>
       {' '}
@@ -53,7 +10,7 @@ export default function HeaderRightSide() {
         {/* <button onClick={() => changeLanguage('ru')}>ru</button>
         <button onClick={() => changeLanguage('en')}>ru</button> */}
 
-        <div className="relative mr-[30px] xl:mr-[60px]">
+        {/* <div className="relative mr-[30px] xl:mr-[60px]">
           <div onClick={handlePopup} className="flex items-center">
             <span className="text-[18px] font-normal cursor-pointer">{selectLanguage}</span>
             <img src="./handle-button.png" alt="" />
@@ -71,7 +28,7 @@ export default function HeaderRightSide() {
               ))}
             </div>
           )}
-        </div>
+        </div> */}
         <div>
           
         </div>
