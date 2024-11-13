@@ -4,7 +4,6 @@ import About from '../../components/About/About';
 import CompanyList from '../../components/CompanyList/CompanyList';
 import Team from '../../components/Team/Team';
 import Goals from '../../components/Goals/Goals';
-import Services from '../../components/Services/Services';
 import Stages from '../../components/Stages/Stages';
 import Development from '../../components/Development/Development';
 import FAQ from '../../components/FAQ/FAQ';
@@ -20,7 +19,6 @@ export default function Home() {
       <CompanyList />
       <Team />
       <Goals />
-      <Services />
       <Stages />
       <Development />
       <FAQ />

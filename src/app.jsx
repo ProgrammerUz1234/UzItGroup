@@ -4,6 +4,7 @@ import Preloader from './components/Preloader/Preloader';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
+import Team from './pages/Team/Team.jsx';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ThemeCTX from './context/ThemeCTX';
@@ -29,6 +30,12 @@ export function App() {
             path="/"
             element={<Layout openBurger={openBurger} setOpenBurger={setOpenBurger} />}>
             <Route index element={<Home />} />
+          </Route>
+
+          <Route
+            path="/team"
+            element={<Team />}>
+            <Route index element={<Team />} />
           </Route>
         </Routes>
       </Suspense>
