@@ -15,6 +15,10 @@
   background-color: #262626;
   z-index: 2;
 
+  button{
+    border: 1px solid #00df3c !important;
+  }
+
   .title {
     line-height: normal;
     margin-top: 25px;
@@ -28,7 +32,7 @@
     font-family: "Swis721 Win95BT" sans-serif;
     font-weight: bold;
     span {
-      color: green;
+      color: #00df3c;
     }
     p {
       font-size: 87px;

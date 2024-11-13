@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Header.module.scss';
-import ToggleTheme from './ToggleTheme';
 import { useTranslation } from 'react-i18next';
 import BurgerIcon from '../Burger/BurgerIcon';
 
@@ -73,9 +72,8 @@ export default function HeaderRightSide() {
             </div>
           )}
         </div>
-
         <div>
-          <ToggleTheme />
+          
         </div>
         <div className={style.share}>
           <img src="./share.png" alt="" />
