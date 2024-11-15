@@ -1,0 +1,70 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+/* General Styles */
+.navbar {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  padding: 10px 50px;
+  font-family: 'Commissioner', sans-serif;
+  height: 108px;
+  position: sticky;
+}
+
+.navbar-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #000;
+}
+
+/* Hamburger Menu Icon */
+.navbar-menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.navbar-menu-icon .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 8px;
+    padding: 10px 50px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-menu-icon {
+    display: flex;
+  }
+}
